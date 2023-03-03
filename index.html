@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,32 @@
     <link rel="stylesheet" href="./style.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
+    <div class="title-header">
+        <button class="reset-game-button">
+            <img src="./reset.png" alt="reset button">
+        </button>
+        <div class="title">Rock Paper Scissors</div>
+        <button class="rules-button">
+            <img src="./question-mark.png">
+        </button>
+    </div>
+    </div>
+    <div class="rps">
+        <button class="scissors"><img src="./scissors.png" alt="scissors"></button>
+        <button class="rock"><img src="./rock.png" alt="rock"></button>
+        <button class="paper"><img src="./paper.png" alt="paper"></button>
+    </div>
+    <div class="results">
+        <div class="result">Win!</div>
+        <div class="you-computer">
+            <div class="you">You</div>
+            <div class="computer">Computer</div>
+        </div>
+        <ul class="history"></ul>
+    </div>
     <script src="./javascript.js"></script>
 </body>
+
 </html>
