@@ -24,6 +24,10 @@ img:hover
 {
     transform: scale(1.5);
 }
+button
+{
+    cursor: pointer;
+}
 .reset-game-button,
 .rules,
 .rps > button
