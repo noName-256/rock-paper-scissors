@@ -176,6 +176,8 @@ function playRound(playerChoice) {
     else if (result.charAt(4) === 'w')addRoundToHistory(playerChoice, computerChoice, "win");
     else if (result.charAt(4) === 'l')addRoundToHistory(playerChoice, computerChoice, "lose");
     else throw new Error("Odd result/comparison");
+    document.querySelector(".you-computer > .you").textContent=`You: ${playerScore}`;
+    document.querySelector(".you-computer > .computer").textContent=`Computer: ${computerScore}`;
     if(playerScore===5&&computerScore===5) showResult("draw");
     else if(playerScore===5) showResult("win");
     else if(computerScore===5) showResult("lose");
