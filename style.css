@@ -16,15 +16,23 @@ body
     margin-top: 3rem;
     align-items: center;
 }
+img
+{
+    transform: 0s;
+}
+img:hover
+{
+    transform: scale(1.5);
+}
 .reset-game-button,
-.rules-button,
+.rules,
 .rps > button
 {
     border: 0;
     background-color: transparent;
 }
 .reset-game-button img,
-.rules-button img
+.rules img
 {
     height: 4rem;
     width: auto;
