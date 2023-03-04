@@ -1,4 +1,8 @@
 let games = document.querySelector(".history");
+let rock= document.getElementById("rock");
+let paper= document.getElementById("paper");
+let scissors= document.getElementById("scissors");
+
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3) + 1;
     switch (choice) {
@@ -62,5 +66,4 @@ function game()
     else if(playerScore===computerScore)console.log("It's a draw, a sensation!");
     else console.log("You lose...");
 }
-game();
 /*You can call game to play the game in the console, but I will use a GUI for the website*/
