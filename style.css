@@ -82,7 +82,8 @@ button
 }
 .results > .you-computer
 {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-size: 2rem;
     font-weight: normal;
     width: 100%;
@@ -96,7 +97,7 @@ button
     font-weight: inherit;
 }
 
-ul .history
+ul.history
 {
     padding: 2rem;
     font-size: 1.5rem;
@@ -104,12 +105,20 @@ ul .history
     width: 100%;
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 
-ul .history > *
+ul.history > *
 {
     display: flex;
     justify-content: space-between;
+    font-size: inherit;
+    font-weight: inherit;
+}
+ul.history > * > *
+{
+    min-width: 30%;
+    text-align: center;
     font-size: inherit;
     font-weight: inherit;
 }
