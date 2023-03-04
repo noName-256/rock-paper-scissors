@@ -185,7 +185,7 @@ paper.addEventListener("click", () => { playRound("paper"); });
 scissors.addEventListener("click", () => { playRound("scissors"); });
 reset.addEventListener("click", ()=>{document.location.reload();});
 document.addEventListener('keyup', function(event) {
-    if (event.ctrlKey) {
+    if (event.ctrlKey&&event.altKey) {
         if(event.key=="4")document.location.reload();
         else if(!gameFinished)
         switch(event.key)
