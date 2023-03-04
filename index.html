@@ -19,14 +19,22 @@
             <img src="./question-mark.png">
         </div>
     </div>
-    </div>
+    <img id="win" src="./win.gif" alt="Winner!">
+    <div id="draw" src="./draw.gif" alt="it's a draw">It's a draw, a sensation.</div>
+    <div id="lose" src="./loss.gif" alt="you lose...">You lose...</div>
     <div class="rps">
         <button title="scissors" id="scissors"><img src="./scissors.png" alt="scissors"></button>
         <button title="rock" id="rock"><img src="./rock.png" alt="rock"></button>
         <button title="paper" id="paper"><img src="./paper.png" alt="paper"></button>
     </div>
     <div class="results">
-        <div class="result">Win!</div>
+        <div class="result"></div>
+        <div id="countdown-box">
+            <button id="pause">
+                <img title="pause" src="./pause.png" alt="pause">
+            </button>
+            <div class="countdown">Restarting the game in 10...</div>
+        </div>
         <div class="you-computer">
             <div class="you">You</div>
             <div class="computer">Computer</div>
